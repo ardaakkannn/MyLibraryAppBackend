@@ -51,14 +51,14 @@ http://localhost:8080/h2-console
 - GET /api/authors: Retrieve all authors.
 - GET /api/authors/{id}: Retrieve a specific author by ID.
 - POST /api/authors: Add a new author.
-Request Body Example:
+##### Request Body Example:
 ```bash
 {
   "name": "J.K. Rowling"
 }
 ```
 - PUT /api/authors/{id}: Update an existing author by ID.
-Request Body Example:
+##### Request Body Example:
 ```bash
 {
   "name": "George Orwell"
@@ -66,12 +66,11 @@ Request Body Example:
 ```
 - DELETE /api/authors/{id}: Delete an author by ID.
 #### Books
-GET /api/books: Retrieve all books.
-GET /api/books/{id}: Retrieve a specific book by ID.
-POST /api/authors/{authorId}/books: Add a new book for a specific author.
-Request Body Example:
-json
-Copy code
+- GET /api/books: Retrieve all books.
+- GET /api/books/{id}: Retrieve a specific book by ID.
+- POST /api/authors/{authorId}/books: Add a new book for a specific author.
+##### Request Body Example:
+```bash
 {
   "name": "1984",
   "publishedDate": "1949-06-08",
@@ -79,10 +78,10 @@ Copy code
   "stock": 10,
   "price": 25.99
 }
-PUT /api/books/{id}: Update an existing book by ID.
-Request Body Example:
-json
-Copy code
+```
+- PUT /api/books/{id}: Update an existing book by ID.
+##### Request Body Example:
+```bash
 {
   "name": "Animal Farm",
   "publishedDate": "1945-08-17",
@@ -90,28 +89,29 @@ Copy code
   "stock": 15,
   "price": 19.99
 }
-DELETE /api/books/{id}: Delete a book by ID.
-GET /api/books/top-sellers: Get the top-selling books.
-GET /api/books/genres/{genre}: Retrieve books by genre.
-Orders
-GET /api/orders: Retrieve all orders.
-GET /api/orders/{id}: Retrieve a specific order by ID.
-POST /api/orders: Create a new order.
-Request Body Example:
-json
-Copy code
+```
+- DELETE /api/books/{id}: Delete a book by ID.
+- GET /api/books/top-sellers: Get the top-selling books.
+- GET /api/books/genres/{genre}: Retrieve books by genre.
+#### Orders
+- GET /api/orders: Retrieve all orders.
+- GET /api/orders/{id}: Retrieve a specific order by ID.
+- POST /api/orders: Create a new order.
+##### Request Body Example:
+```bash
 {
   "customerId": 1,
   "bookIds": [1, 2],
   "orderDate": "2024-01-15T10:30:00"
 }
-PUT /api/orders/{id}: Update an existing order by ID.
-Request Body Example:
-json
-Copy code
+```
+- PUT /api/orders/{id}: Update an existing order by ID.
+##### Request Body Example:
+```bash
 {
   "customerId": 1,
   "bookIds": [1, 3],
   "orderDate": "2024-01-15T10:30:00"
 }
-DELETE /api/orders/{id}: Delete an order by ID.
+```
+- DELETE /api/orders/{id}: Delete an order by ID.
