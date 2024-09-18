@@ -25,3 +25,11 @@ Clone the project to your local machine:
 ```bash
 git clone https://github.com/ardaakkannn/MyLibraryAppBackend.git
 
+### 2. Import the project into your IDE
+Open your preferred IDE (IntelliJ IDEA, Eclipse, etc.) and import the project.  
+Ensure Maven dependencies are downloaded.
+
+### 3. Run the application
+To run the application, execute the following command from the terminal or IDE:
+```bash
+mvn spring-boot:run
